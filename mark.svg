@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="30%" stop-color="#C084FC"/>
+      <stop offset="55%" stop-color="#F6F5FA"/>
+      <stop offset="80%" stop-color="#4F6EF7"/>
+      <stop offset="100%" stop-color="#7C9BFF"/>
+    </linearGradient>
+    <linearGradient id="ribbonGradSoft" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F6EF7"/>
+      <stop offset="50%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#E879F9"/>
+    </linearGradient>
+  </defs>
+  <path d="M 158 34
+           C 130 34, 96 44, 96 76
+           C 96 104, 122 112, 148 118
+           C 168 123, 178 130, 178 144
+           C 178 164, 156 174, 130 174
+           C 106 174, 82 166, 68 150"
+        fill="none" stroke="url(#ribbonGrad)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 42 166
+           C 70 166, 104 156, 104 124
+           C 104 96, 78 88, 52 82
+           C 32 77, 22 70, 22 56
+           C 22 36, 44 26, 70 26
+           C 94 26, 118 34, 132 50"
+        fill="none" stroke="url(#ribbonGradSoft)" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+</svg>
