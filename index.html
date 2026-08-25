@@ -389,7 +389,7 @@ hr.rule{ border:none; border-top:1px solid var(--border); }
 @media (max-width:520px){ .why-grid{ grid-template-columns:1fr; } }
 
 /* ============ OUR WORK ============ */
-.work-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.work-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:26px; }
 .work-card{
   background:var(--bg-card); backdrop-filter:blur(10px); border:1px solid var(--border); border-radius:var(--radius);
   overflow:hidden; transition:transform .45s var(--ease), border-color .4s var(--ease), box-shadow .45s var(--ease);
@@ -409,6 +409,14 @@ hr.rule{ border:none; border-top:1px solid var(--border); }
 .work-body p{ font-size:13.8px; color:var(--muted); margin-bottom:16px; }
 .work-tags{ display:flex; gap:8px; flex-wrap:wrap; }
 .work-tags span{ font-size:11.5px; color:var(--purple-2); border:1px solid rgba(147,51,234,0.3); background:rgba(147,51,234,0.08); padding:4px 10px; border-radius:999px; }
+.work-link{
+  display:inline-flex; align-items:center; gap:6px; margin-top:18px;
+  font-size:13px; font-weight:600; color:var(--white); border-bottom:1px solid var(--border-strong);
+  padding-bottom:2px; transition:color .25s var(--ease), border-color .25s var(--ease), gap .25s var(--ease);
+}
+.work-link svg{ width:14px; height:14px; stroke:currentColor; transition:transform .3s var(--ease); }
+.work-link:hover{ color:var(--purple-2); border-color:var(--purple-2); gap:9px; }
+.work-link:hover svg{ transform:translate(2px,-2px); }
 
 @media (max-width:900px){ .work-grid{ grid-template-columns:1fr; } }
 
@@ -764,110 +772,124 @@ footer{ border-top:1px solid var(--border); padding:64px 0 32px; }
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Our work</p>
-        <h2>Demo &amp; concept projects</h2>
-        <p>SOLVRA is a young agency — these are demo projects we built to show our design and development standard, not existing client work. Real case studies are on the way.</p>
+        <h2>Recent client work</h2>
+        <p>Real projects, real businesses — here's some of our recent work.</p>
       </div>
 
       <div class="work-grid reveal">
-        <!-- Automotive -->
+        <!-- BK Autospares -->
         <article class="work-card">
           <div class="work-visual">
-            <span class="work-tag">Demo Project</span>
+            <span class="work-tag">Client Project</span>
             <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
               <defs>
-                <linearGradient id="carbg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#1c1c20"/><stop offset="100%" stop-color="#08080a"/>
-                </linearGradient>
-                <linearGradient id="carbody" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#3d3d40"/><stop offset="50%" stop-color="#e4e4e7"/><stop offset="100%" stop-color="#4a4a4e"/>
-                </linearGradient>
-              </defs>
-              <rect width="400" height="300" fill="url(#carbg)"/>
-              <ellipse cx="200" cy="230" rx="150" ry="16" fill="#000" opacity="0.5"/>
-              <path d="M60 210 C70 160 110 140 150 138 L250 138 C295 140 320 165 335 205 C338 214 330 222 318 222 L82 222 C68 222 58 218 60 210 Z" fill="url(#carbody)"/>
-              <path d="M150 138 L172 108 L228 108 L250 138 Z" fill="#111114" opacity="0.85"/>
-              <circle cx="120" cy="222" r="26" fill="#0a0a0c" stroke="#5a5a5e" stroke-width="4"/>
-              <circle cx="280" cy="222" r="26" fill="#0a0a0c" stroke="#5a5a5e" stroke-width="4"/>
-              <rect x="70" y="196" width="260" height="4" fill="#f4f4f6" opacity="0.5"/>
-            </svg>
-          </div>
-          <div class="work-body">
-            <h3>Automotive Website</h3>
-            <p class="work-role">Demo project</p>
-            <p>A high-end vehicle showcase concept — bold imagery, minimal chrome and a layout built to make performance cars feel premium.</p>
-            <div class="work-tags"><span>Web Design</span><span>E-commerce ready</span></div>
-          </div>
-        </article>
-
-        <!-- Education -->
-        <article class="work-card">
-          <div class="work-visual">
-            <span class="work-tag">Demo Project</span>
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="edubg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#151518"/><stop offset="100%" stop-color="#08080a"/>
-                </linearGradient>
-              </defs>
-              <rect width="400" height="300" fill="url(#edubg)"/>
-              <rect x="40" y="60" width="320" height="34" rx="6" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="56" y="72" width="90" height="10" rx="2" fill="#8c8c91"/>
-              <rect x="260" y="70" width="80" height="14" rx="4" fill="#e4e4e7"/>
-              <rect x="40" y="112" width="150" height="150" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <circle cx="115" cy="170" r="26" fill="#3a3a3e"/>
-              <rect x="60" y="210" width="110" height="8" rx="3" fill="#5a5a5e"/>
-              <rect x="60" y="228" width="70" height="8" rx="3" fill="#3a3a3e"/>
-              <rect x="210" y="112" width="150" height="70" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="226" y="128" width="118" height="8" rx="3" fill="#8c8c91"/>
-              <rect x="226" y="146" width="80" height="8" rx="3" fill="#3a3a3e"/>
-              <rect x="210" y="194" width="150" height="68" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="226" y="210" width="118" height="8" rx="3" fill="#8c8c91"/>
-              <rect x="226" y="228" width="90" height="8" rx="3" fill="#3a3a3e"/>
-            </svg>
-          </div>
-          <div class="work-body">
-            <h3>Education Website</h3>
-            <p class="work-role">Demo project</p>
-            <p>A concept portal for a training provider — course listings, a clean dashboard layout and a structure built for enrolments.</p>
-            <div class="work-tags"><span>Web Development</span><span>Portal / dashboard</span></div>
-          </div>
-        </article>
-
-        <!-- Loan -->
-        <article class="work-card">
-          <div class="work-visual">
-            <span class="work-tag">Demo Project</span>
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="loanbg" x1="0" y1="0" x2="1" y2="1">
+                <linearGradient id="bkbg" x1="0" y1="0" x2="1" y2="1">
                   <stop offset="0%" stop-color="#17171b"/><stop offset="100%" stop-color="#08080a"/>
                 </linearGradient>
-                <linearGradient id="loanbar" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#5a5a5e"/><stop offset="100%" stop-color="#e4e4e7"/>
+                <linearGradient id="bkaccent" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#4F6EF7"/><stop offset="100%" stop-color="#7C9BFF"/>
                 </linearGradient>
               </defs>
-              <rect width="400" height="300" fill="url(#loanbg)"/>
-              <rect x="40" y="46" width="320" height="70" rx="10" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="60" y="64" width="120" height="10" rx="3" fill="#8c8c91"/>
-              <rect x="60" y="86" width="180" height="16" rx="4" fill="#e4e4e7"/>
-              <rect x="300" y="66" width="40" height="34" rx="6" fill="#0a0a0c" stroke="#5a5a5e"/>
-              <rect x="40" y="132" width="150" height="130" rx="10" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="58" y="150" width="70" height="8" rx="3" fill="#5a5a5e"/>
-              <rect x="58" y="170" width="114" height="70" rx="6" fill="none" stroke="#3a3a3e"/>
-              <path d="M64 224 L84 200 L104 214 L124 178 L144 192 L164 160" fill="none" stroke="url(#loanbar)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="210" y="132" width="150" height="60" rx="10" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="226" y="150" width="118" height="8" rx="3" fill="#8c8c91"/>
-              <rect x="226" y="168" width="60" height="10" rx="3" fill="#e4e4e7"/>
-              <rect x="210" y="204" width="150" height="58" rx="10" fill="#1b1b1f" stroke="#2a2a2e"/>
-              <rect x="226" y="222" width="90" height="8" rx="3" fill="#8c8c91"/>
-              <rect x="226" y="240" width="118" height="10" rx="4" fill="#e4e4e7"/>
+              <rect width="400" height="300" fill="url(#bkbg)"/>
+              <!-- search bar -->
+              <rect x="40" y="46" width="320" height="36" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+              <circle cx="60" cy="64" r="6" fill="none" stroke="#8c8c91" stroke-width="2"/>
+              <line x1="64.5" y1="68.5" x2="70" y2="74" stroke="#8c8c91" stroke-width="2" stroke-linecap="round"/>
+              <rect x="80" y="59" width="140" height="10" rx="2" fill="#5a5a5e"/>
+              <rect x="300" y="55" width="46" height="18" rx="4" fill="url(#bkaccent)"/>
+              <!-- product grid: parts catalog tiles -->
+              <g>
+                <rect x="40" y="102" width="86" height="86" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <circle cx="83" cy="138" r="20" fill="none" stroke="#4F6EF7" stroke-width="3"/>
+                <circle cx="83" cy="138" r="7" fill="#4F6EF7"/>
+                <rect x="52" y="168" width="62" height="7" rx="2" fill="#5a5a5e"/>
+
+                <rect x="138" y="102" width="86" height="86" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <rect x="160" y="120" width="42" height="30" rx="3" fill="none" stroke="#7C9BFF" stroke-width="3"/>
+                <circle cx="171" cy="158" r="6" fill="#7C9BFF"/>
+                <circle cx="191" cy="158" r="6" fill="#7C9BFF"/>
+                <rect x="150" y="168" width="62" height="7" rx="2" fill="#5a5a5e"/>
+
+                <rect x="236" y="102" width="86" height="86" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <path d="M258 158 L279 122 L300 158 Z" fill="none" stroke="#C084FC" stroke-width="3" stroke-linejoin="round"/>
+                <rect x="248" y="168" width="62" height="7" rx="2" fill="#5a5a5e"/>
+
+                <rect x="40" y="200" width="86" height="62" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <rect x="52" y="212" width="62" height="7" rx="2" fill="#8c8c91"/>
+                <rect x="52" y="228" width="40" height="8" rx="2" fill="url(#bkaccent)"/>
+
+                <rect x="138" y="200" width="86" height="62" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <rect x="150" y="212" width="62" height="7" rx="2" fill="#8c8c91"/>
+                <rect x="150" y="228" width="40" height="8" rx="2" fill="url(#bkaccent)"/>
+
+                <rect x="236" y="200" width="86" height="62" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+                <rect x="248" y="212" width="62" height="7" rx="2" fill="#8c8c91"/>
+                <rect x="248" y="228" width="40" height="8" rx="2" fill="url(#bkaccent)"/>
+              </g>
             </svg>
           </div>
           <div class="work-body">
-            <h3>Loan Website</h3>
-            <p class="work-role">Demo project</p>
-            <p>A fintech-style concept for a lending platform — application flow, dashboard visuals and a layout designed to build trust fast.</p>
-            <div class="work-tags"><span>Web Development</span><span>Fintech UI</span></div>
+            <h3>BK Autospares</h3>
+            <p class="work-role">Client project</p>
+            <p>An auto parts e-commerce and catalog site for a business sourcing parts from Dubai to Zimbabwe — searchable inventory, product gallery, and direct WhatsApp/contact enquiries.</p>
+            <div class="work-tags"><span>Web Design</span><span>Inventory / Search</span></div>
+            <a class="work-link" href="https://work-alpha-ecru.vercel.app/" target="_blank" rel="noopener">View live site
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Impact International Learning -->
+        <article class="work-card">
+          <div class="work-visual">
+            <span class="work-tag">Client Project</span>
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="iilbg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#151518"/><stop offset="100%" stop-color="#08080a"/>
+                </linearGradient>
+                <linearGradient id="iilaccent" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#C084FC"/><stop offset="100%" stop-color="#E879F9"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="300" fill="url(#iilbg)"/>
+              <!-- animated hero banner -->
+              <rect x="40" y="42" width="320" height="70" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+              <circle cx="70" cy="77" r="16" fill="none" stroke="url(#iilaccent)" stroke-width="3"/>
+              <path d="M64 77 l4 4 8 -8" fill="none" stroke="url(#iilaccent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="100" y="60" width="150" height="10" rx="3" fill="#e4e4e7"/>
+              <rect x="100" y="78" width="110" height="7" rx="2" fill="#8c8c91"/>
+              <rect x="290" y="58" width="50" height="22" rx="6" fill="url(#iilaccent)"/>
+              <!-- credential badges -->
+              <g>
+                <circle cx="76" cy="150" r="24" fill="none" stroke="#C084FC" stroke-width="3"/>
+                <path d="M66 150 l7 7 15 -15" fill="none" stroke="#C084FC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="52" y="182" width="48" height="7" rx="2" fill="#5a5a5e"/>
+
+                <circle cx="160" cy="150" r="24" fill="none" stroke="#E879F9" stroke-width="3"/>
+                <path d="M160 138 v24 M148 150 h24" stroke="#E879F9" stroke-width="3" stroke-linecap="round"/>
+                <rect x="136" y="182" width="48" height="7" rx="2" fill="#5a5a5e"/>
+
+                <circle cx="244" cy="150" r="24" fill="none" stroke="#7C9BFF" stroke-width="3"/>
+                <path d="M232 156 l12 -16 12 16" fill="none" stroke="#7C9BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="220" y="182" width="48" height="7" rx="2" fill="#5a5a5e"/>
+              </g>
+              <!-- LMS progress panel -->
+              <rect x="40" y="216" width="320" height="46" rx="8" fill="#1b1b1f" stroke="#2a2a2e"/>
+              <rect x="56" y="230" width="90" height="8" rx="2" fill="#8c8c91"/>
+              <rect x="56" y="246" width="180" height="6" rx="3" fill="#2a2a2e"/>
+              <rect x="56" y="246" width="120" height="6" rx="3" fill="url(#iilaccent)"/>
+              <rect x="300" y="232" width="40" height="16" rx="4" fill="none" stroke="#C084FC"/>
+            </svg>
+          </div>
+          <div class="work-body">
+            <h3>Impact International Learning</h3>
+            <p class="work-role">Client project</p>
+            <p>A training and education provider site with a custom animated hero, credential showcases, service breakdowns, and an integrated LMS portal for enrolled students.</p>
+            <div class="work-tags"><span>Web Design</span><span>Custom Animation</span><span>LMS Integration</span></div>
+            <a class="work-link" href="https://impactinternationallearning.com" target="_blank" rel="noopener">View live site
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
           </div>
         </article>
       </div>
@@ -965,8 +987,8 @@ footer{ border-top:1px solid var(--border); padding:64px 0 32px; }
         <div class="stat-grid reveal">
           <div class="stat-card">
             <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><path d="M12 2l3 7h7l-5.6 4.3L18.5 21 12 16.6 5.5 21l2.1-7.7L2 9h7z"/></svg>
-            <div class="stat-num">3+</div>
-            <div class="stat-label">Demo projects built</div>
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Client projects delivered</div>
           </div>
           <div class="stat-card">
             <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 6-6"/></svg>
